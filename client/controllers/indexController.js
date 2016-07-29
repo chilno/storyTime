@@ -4,7 +4,7 @@ myApp.controller('indexController', function($scope, loginFactory, $cookies, $lo
 
 	$scope.loginUser = function(){
 		loginFactory.login($scope.user, function(data){
-			console.log('these are cookies', $cookies._id);
+			console.log('these are cookies');
 			if(data.errors){
 				$scope.user = "";
 				$scope.test = data;
